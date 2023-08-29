@@ -1,13 +1,16 @@
-import "./App.css";
+import React from "react";
+
+import MyHeader from "./MyHeader";
+import MyFooter from "./MyFooter";
+import Counter from "./Counter";
+import Container from "./Container";
 
 function App() {
-  let name = "오혜지";
   return (
-    <div className="App">
-      <header className="App-header">
-        <h2>안녕 리액트.. 완강이 목표다... {name}</h2>
-      </header>
-    </div>
+    <Container>
+      <MyHeader />
+      <Counter initialValue={5} />
+    </Container>
   );
 }
 
